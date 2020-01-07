@@ -1,0 +1,21 @@
+<html>
+ <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script>
+   $(document).ready(function(){
+    $("button").click(function(){
+     if($("#input1").val()=="" || $("#input2").val()=="")
+      {alert("Please fill all the fields");}
+    });
+   });
+  </script>
+ </head>
+ <body>
+  First name:<br>
+  <input type="text" name="firstname" id="input1"><br>
+  last name:<br>
+  <input type="text" name="lastname" id="input2"><br><br>
+  <button>Submit</button>
+ </body>
+</html>

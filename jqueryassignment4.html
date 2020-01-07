@@ -1,0 +1,137 @@
+<html>
+ <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script> 
+   $(document).ready(function(){
+    $("#container1").click(function(){
+     $("#container1").css("background-color","green");
+    });
+   });
+  </script>
+  <script>
+   $(document).ready(function(){
+    $("#container2").click(function(){
+     $("#container2").text("Leftbar");
+    });
+   });
+  </script>
+  <script>
+   $(document).ready(function(){
+    $("#container4").click(function(){
+     $("#container3").fadeOut();
+    });
+   });
+  </script>
+  <script>
+   $(document).ready(function(){
+    $("#container5").click(function(){
+     $("#container7").css("display","block");
+     $("#container6").fadeIn();
+    });
+   });
+  </script>
+  <script>
+   $(document).ready(function(){
+    $("#container7").click(function(){
+     $("#container7").css("display","none");
+     $("#container6").fadeOut();
+    });
+   });
+  </script>
+  <style type="text/css">
+   #container1{
+             width: 1300px;
+             height: 100px;
+             margin: auto;
+             background: #0DDBC5;
+             position: absolute;
+             text-align: center;
+             color: white;
+             font-size: large;
+             }
+   #container2{
+             width: 540px;
+             height: 450px;
+             margin: auto;
+             background: #58C858; 
+             position: absolute;
+             top: 120px;
+             text-align: center;
+             color: white;
+             font-size: large;
+             }
+   #container3{
+             width: 740px;
+             height: 300px;
+             margin: auto;
+             background: #FCE104;
+             position: absolute; top: 120px; left: 560px;
+             text-align: center;
+             color: white;
+             font-size: large;
+             }
+   #container4{
+             width: 740px;
+             height: 140px;
+             margin: auto;
+             background: #615D51;
+             position: absolute; top: 430px; left: 560px;
+             text-align: center;
+             color: white;
+             font-size: large;
+             }
+   #container5{
+             width: 1300px;
+             height: 80px;
+             margin: auto;
+             background: #F4B304;
+             position: absolute; top: 580px;
+             text-align: center;
+             color: white;
+             font-size: large;
+             }
+   #container6{
+               width:1300px;
+               height:100%;
+               opacity:0.8;
+               background-color: black;
+               display:none;
+               text-align:center;
+               color:white;
+               font-size:xx-large;
+               padding-top:300px;
+              }
+   #container7{
+               width:200px; height:200px; position:absolute; opacity:1; display:none
+              }
+  </style>
+ </head>
+ <body>
+  <div id="container1">
+   <br>
+   header
+  </div>
+  <div id="container2">
+   <br>
+   Sidebar
+  </div>
+  <div id="container3">
+   <br>
+   Main Content
+  </div>
+  <div id="container4">
+   <br>
+   Extra Content
+  </div>
+  <div id="container5">
+   <br>
+   Footer
+  </div>
+  <div id="container6">I am popup
+  </div>
+  <div id="container7">
+  <img src="/sysroot/home/innoraft/Pictures/cross.png">
+  </div>
+ </body>
+</html>
